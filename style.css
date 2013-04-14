@@ -1,0 +1,83 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.images{
+max-width: 100%;
+width: 100%;
+position: relative;
+background: #d9d9d9;
+}
+
+.images img{
+position: absolute;
+max-width: 100%;
+transition: all 2s;
+-moz-transition: all 2s; /* Firefox 4 */
+-webkit-transition: all 2s; /* Safari and Chrome */
+-o-transition: all 2s; /* Opera */
+-ms-transition: all 2s;
+border: 1px solid #ddd;
+  -webkit-box-shadow: 0 0 0 10px #fff, 10px 10px 10px #333;
+     -moz-box-shadow: 0 0 0 10px #fff, 10px 10px 10px #333;
+	   -o-box-shadow: 0 0 0 10px #fff, 10px 10px 10px #333;
+          box-shadow: 0 0 0 10px #fff, 10px 10px 10px #333;
+z-index: 1;
+}
+
+.images img:hover{
+transform: rotate(0deg)scale(1) !important ;
+-ms-transform:rotate(0deg)scale(1) !important; /* IE 9 */
+-moz-transform: rotate(0deg)scale(1)  !important ; /* Firefox */
+-webkit-transform: rotate(0deg) scale(1) !important; /* Safari and Chrome */
+-o-transform: rotate(0deg)scale(1) !important; /* Opera */
+z-index: 200;
+}
+
+
+
+h1{
+font-size: 200%;
+}
