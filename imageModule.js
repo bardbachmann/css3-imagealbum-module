@@ -5,8 +5,10 @@ TO-DO:
 */
 var imageModule = (function() {
     
+	//List for the HTML-img-tags
 	var imageList = [];
 	
+	//Adding an image
 	var addImage = function(url, scale, x, y, rotate){
 		var image = {
 			url: url,
@@ -19,6 +21,7 @@ var imageModule = (function() {
 		imageList.push(image);
 	}
 	
+	//Create an HTML img tag from an image. 
 	var printImage = function(image){	
 		return '<img src="'+image.url+'" style="left:'+image.x+'; top:'+image.y+'; transform:rotate('+image.rotate+'deg) scale('+image.scale+');'+ 
 		'-webkit-transform:rotate('+image.rotate+'deg) scale('+image.scale+');'+
@@ -26,10 +29,10 @@ var imageModule = (function() {
 		'-ms-transform:rotate('+image.rotate+'deg) scale('+image.scale+');'+'"/>';	
 	}
 	
+	//Init all images in the list
 	var imageInit = function(){
 		for(var i = 0; i < imageList.length; i++){
 			$(".images").append(printImage(imageList[i]));
-			console.log(printImage(imageList[i]));
 		}
 		$(".images").css("height", $(window).height());
 	}
