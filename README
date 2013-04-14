@@ -1,0 +1,25 @@
+Image Album Module
+
+This is a short and customizable JavaScript module, which lets you present images.
+
+Usage:
+
+1. Create a div class for the images called images. 
+	<div class="images"> </div>
+	
+2. Remove the current example in imageModule.js, within $(document).ready, and add your own images.
+		imageModule.addImage(
+		"http://blog.gettyimages.com/wp-content/uploads/2013/01/Siberian-Tiger-Running-Through-Snow-Tom-Brakefield-Getty-Images-200353826-001.jpg",
+		0.2, "90px", "19%", -10);
+		
+		Write it like this:
+		
+		imageModule.addImage(
+		url, 						[write a normal URL]
+		scale, 						[0.1 = 10% of normal size. 2 = 200%. I suggest that you use smaller sizes]
+		distance from the left, 	[write either in pixels or percent. Remember to encapsulate in " " or ' ']
+		distance from the top, 		[write either in pixels or percent. Remember to encapsulate in " " or ' ']
+		rotation in degrees);		[both positive and negative degrees work]
+	
+		
+3. Initiate the images by using imageModule.imageInit();
